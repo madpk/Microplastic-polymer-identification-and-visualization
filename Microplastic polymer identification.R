@@ -20,7 +20,7 @@ mppeaks = lapply(raman_list, read.table)
 #rename the files
 names(mppeaks)<-raman_list_names
 
-#Change the column and row names in each .txt files
+#Change the coloumn and row names in each .txt files
 
 colnames <- c("wavenumber","intensity")
 
@@ -32,7 +32,7 @@ raman_adj <- lapply(mppeaks, adj_intens)
 raman_proc <- lapply(raman_adj,smooth_intens)
 raman_proc<-lapply(raman_proc,subtr_bg)
 
-#function to cross refer peaks (.txt files)
+#function to match peaks (.txt files) with openspecy library 
 
 mp_spec<-function(x){
   match_spec(x,library = spec_lib, which = "raman")
