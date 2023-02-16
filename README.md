@@ -1,5 +1,4 @@
 # Microplastic-polymer-identification-and-visualization
-Identifying microplastic polymer types from Raman peaks (.txt files) using openspecy package.
 
 Open specy is a tool for identifying the polymer composition of microplastic particles from the peaks obtained from
 Raman and (FT)IR spectral analysis. Herein, let's see  how we can select multiple .txt files containing the peaks corresponding to Raman spectra
